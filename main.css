@@ -19,7 +19,7 @@
   font-weight: 500;
   font-display: swap;
   src: url("./fonts/robotomedium.woff2") format("woff2"),
-       url("./fonts/robotomedium.woff") format("woff");
+    url("./fonts/robotomedium.woff") format("woff");
 }
 
 @font-face {
@@ -44,7 +44,7 @@ body {
   background-color: #cfdde8;
 }
 
-.chat-box {
+.facebook-chat {
   margin: 0 auto;
   width: 400px;
   margin-top: 110px;
@@ -52,7 +52,7 @@ body {
   background-color: #fff;
 }
 
-.chat-box__inner-wrapper {
+.facebook-chat__inner-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +62,7 @@ body {
   background-color: var(--main-bg-color);
 }
 
-.chat-box__title {
+.facebook-chat__title {
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -73,7 +73,7 @@ body {
   line-height: 20px;
 }
 
-.chat-box__title::before {
+.facebook-chat__title::before {
   width: 6px;
   height: 6px;
   margin-right: 10px;
@@ -82,7 +82,7 @@ body {
   content: "";
 }
 
-.chat-box__button {
+.facebook-chat__button {
   width: 24px;
   height: 24px;
   border: none;
@@ -92,11 +92,11 @@ body {
   background-color: transparent;
 }
 
-.site-chat {
+.facebook-chat__chat {
   padding: 24px 24px 20px;
 }
 
-.site-chat__title {
+.facebook-chat__chat-title {
   margin-top: 0;
   margin-bottom: 24px;
   font-weight: 500;
@@ -106,7 +106,7 @@ body {
   color: var(--main-color);
 }
 
-.site-chat__title::before {
+.facebook-chat__chat-title::before {
   display: inline-block;
   width: 144px;
   height: 1px;
@@ -116,7 +116,7 @@ body {
   content: "";
 }
 
-.site-chat__title::after {
+.facebook-chat__chat-title::after {
   display: inline-block;
   width: 144px;
   height: 1px;
@@ -126,32 +126,25 @@ body {
   content: "";
 }
 
-.site-chat__inner-wrapper {
+.facebook-chat__wrapper {
   position: relative;
-  display: flex;
-  flex-direction: column;
   margin-bottom: 16px;
 }
 
-.site-chat__inner-wrapper:nth-child(3) {
+.facebook-chat__wrapper:nth-child(3) {
   margin-left: 67px;
 }
 
-.site-chat__inner-wrapper:nth-child(3) .site-chat__time {
+.facebook-chat__wrapper:nth-child(3) .facebook-chat__time {
   margin-left: auto;
 }
 
-.site-chat__inner-wrapper:nth-child(3) .site-chat__text {
+.facebook-chat__wrapper:nth-child(3) .facebook-chat__text {
   margin-right: 10px;
   margin-left: 0;
 }
 
-.site-chat__inner-wrapper:nth-child(5) {
-  flex-direction: row-reverse;
-  margin-bottom: 0;
-}
-
-.site-chat__time {
+.facebook-chat__time {
   display: block;
   margin-bottom: 6px;
   font-size: 12px;
@@ -159,11 +152,11 @@ body {
   color: var(--main-color);
 }
 
-.site-chat__inner-wrapper:nth-child(3) .site-chat__time {
+.facebook-chat__wrapper:nth-child(3) .facebook-chat__time {
   display: block;
 }
 
-.site-chat__text {
+.facebook-chat__text {
   display: block;
   width: 275px;
   margin-left: 10px;
@@ -174,64 +167,56 @@ body {
   background-color: #e6edf6;
 }
 
-.site-chat__inner-wrapper:nth-child(2) .site-chat__text::before {
+.facebook-chat__wrapper:nth-child(2) .facebook-chat__text::before {
   position: absolute;
   display: inline-block;
   top: 20px;
-  left: 0;
+  left: 5px;
   border-width: 6px;
   border-style: solid;
-  border-top-color: #e6edf6;
-  border-right-color: #e6edf6;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
+  border-color: #e6edf6 transparent transparent;
   content: "";
 }
 
-.site-chat__inner-wrapper:nth-child(3) .site-chat__text::after {
+.facebook-chat__wrapper:nth-child(3) .facebook-chat__text::after {
   position: absolute;
   display: inline-block;
   top: 20px;
-  right: 0;
+  right: 4px;
   border-width: 6px;
   border-style: solid;
-  border-top-color: #e6edf6;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: #e6edf6;
+  border-color: #e6edf6 transparent transparent;
   content: "";
 }
 
-.site-chat__inner-wrapper:nth-child(4) .site-chat__text::before {
+.facebook-chat__wrapper:nth-child(4) .facebook-chat__text::before {
   position: absolute;
   display: inline-block;
   top: 20px;
-  left: 0;
+  left: 5px;
   border-width: 6px;
   border-style: solid;
-  border-top-color: #e6edf6;
-  border-right-color: #e6edf6;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
+  border-color: #e6edf6 transparent transparent;
   content: "";
 }
 
-.site-chat__inner-wrapper:nth-child(4) .site-chat__text {
+.facebook-chat__wrapper:nth-child(4) .facebook-chat__text {
   width: 89px;
 }
 
-.site-chat__inner-wrapper:nth-child(5) .site-chat__text {
-  margin-left: 0;
+.facebook-chat__wrapper:nth-child(5) .facebook-chat__text {
+  display: block;
+  margin-left: auto;
   width: 205px;
   background-color: #ffc2c1;
 }
 
-.site-chat__form-wrapper {
+.facebook-chat__form {
   position: relative;
   margin-top: 30px;
 }
 
-.site-chat__input {
+.facebook-chat__input {
   width: 352px;
   border: 1px solid var(--main-color);
   border-radius: 54px;
@@ -241,14 +226,14 @@ body {
   padding: 13px 0 13px 20px;
 }
 
-.site-chat__input::placeholder {
+.facebook-chat__input::placeholder {
   font-family: var(--main-font-family);
   font-size: 16px;
   line-height: 18.75px;
   color: #bdbdbd;
 }
 
-.site-chat__button {
+.facebook-chat__form-button {
   position: absolute;
   top: 5px;
   right: 5px;
